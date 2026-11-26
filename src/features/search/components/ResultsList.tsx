@@ -34,7 +34,9 @@ export function ResultsList({
     return () => io.disconnect();
   }, [signature, shown >= places.length]);
 
-  const grid = cn('grid gap-3', columns === 2 && 'md:grid-cols-2', columns === 3 && 'md:grid-cols-2 xl:grid-cols-3', className);
+  // Between lg and xl the navigation rail and the filter column are both on screen, which
+  // leaves room for one readable column of results; two columns return at xl.
+  const grid = cn('grid gap-3', columns === 2 && 'md:max-lg:grid-cols-2 xl:grid-cols-2', columns === 3 && 'md:max-lg:grid-cols-2 xl:grid-cols-3', className);
 
   if (loading) {
     return (
