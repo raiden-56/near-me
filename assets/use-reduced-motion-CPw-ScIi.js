@@ -1,0 +1,1 @@
+import{a as e,i as t,o as n}from"./react-Byxkddy-.js";import{F as r,R as i}from"./button-LsfikURO.js";var a=i(r(),1);function o(){!e.current&&t();let[r]=(0,a.useState)(n.current);return r}export{o as t};

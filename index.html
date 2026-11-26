@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>NearMe — Everything Around You</title>
+    <meta name="description" content="Discover places. Find services. Know what's happening nearby." />
+    <meta name="theme-color" content="#F5F3ED" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="NearMe" />
+    <link rel="icon" href="/near-me/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/near-me/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+    <script>
+      // Apply the saved theme before first paint so there is no light/dark flash.
+      try {
+        if (localStorage.getItem('nearme-theme') === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/near-me/assets/index-T5LGpN7P.js"></script>
+    <link rel="modulepreload" crossorigin href="/near-me/assets/button-LsfikURO.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/react-dom-On9IeT3Z.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/react-Byxkddy-.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/http-CC6JkHDr.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/use-reduced-motion-CPw-ScIi.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/env-B_6gsekW.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/schemas-D_HkoRYA.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/persist-DsfIqLxI.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/localDb-Doim9IDg.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/categories-BS0a4wq3.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/time-BFwdTkb-.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/settings-BoJXc4K2.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/contributions-Ch3Bp0Gv.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/tslib.es6-Tae09705.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/controls-DCawC5S7.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/dist-ewunGs_D.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/badge-percent-Drahf8cl.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/chevron-down-I0EGimlh.js">
+    <link rel="modulepreload" crossorigin href="/near-me/assets/activity-DcVtueMQ.js">
+    <link rel="stylesheet" crossorigin href="/near-me/assets/index-CGzmb9nD.css">
+  <link rel="manifest" href="/near-me/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+    <noscript>NearMe needs JavaScript to show what is around you.</noscript>
+  </body>
+</html>
