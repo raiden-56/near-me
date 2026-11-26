@@ -1,0 +1,16 @@
+node_modules
+dist
+dev-dist
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.vite
+
+# Imagery tool working files
+scripts/.imagery-candidates.json
+public/_imagery-review.html
+
+# Local tooling
+.claude/

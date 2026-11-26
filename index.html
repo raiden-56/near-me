@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>NearMe — Everything Around You</title>
+    <meta name="description" content="Discover places. Find services. Know what's happening nearby." />
+    <meta name="theme-color" content="#F5F3ED" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="NearMe" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+    <script>
+      // Apply the saved theme before first paint so there is no light/dark flash.
+      try {
+        if (localStorage.getItem('nearme-theme') === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>NearMe needs JavaScript to show what is around you.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
